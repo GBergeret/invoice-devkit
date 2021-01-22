@@ -1,0 +1,155 @@
+/*
+Bergeret Theme
+Created by Olivier Colonna
+18/01/2021 */
+
+
+/*=========================== LOGO =========================*/
+
+.logo {
+  height: 100px;
+}
+
+/*=========================== LAYOUT =========================*/
+
+#invoice {
+  padding: 75px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-family: 'Verdana';
+}
+
+#invoice-header {
+  order: 1;
+  text-align: right;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#client-details {
+  text-align: right;
+  margin-bottom: 60px;
+  order: 2;
+}
+
+/*=========================== INFO =========================*/
+#invoice-info {
+  order: 3;
+  border-top: 3px solid black;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+#comments {
+  order: 3;
+  padding-bottom: 36.5px;
+  color: #818181;
+}
+
+#invoice-info h2 {
+  font-size: 30px;
+  margin-bottom: 8px;
+  font-family: 'Verdana';
+}
+
+#invoice-info h3 {
+  font-size: 15px;
+}
+
+#payment-terms, #payment-due, #payment-total {
+  float: right;
+  width: fit-content;
+}
+
+/*=========================== AMOUNT =========================*/
+
+#invoice table {
+  border-collapse: collapse;
+  clear: both;
+  width: 100%;
+  border: none;
+}
+
+#invoice-amount {
+  order: 4;
+}
+
+.item_l {
+  padding-left: 0;
+}
+
+td {
+  border: none !important;
+}
+
+tfoot {
+  border-top: 1px solid #000000;
+}
+
+tfoot tr:first-child td {
+  padding-top: 15px;
+}
+
+tfoot tr td {
+  padding: 0 0 15px;
+  text-align: right;
+}
+
+tbody tr:first-child td {
+  padding: 40px 0 9px 0;
+}
+
+tbody tr:last-child td {
+  padding: 9px 0 40px 0;
+}
+
+#invoice-amount, #header_row {
+  border-bottom: 1px solid #000000;
+}
+
+.details_th, .quantity_th {
+  text-align: left;
+}
+
+.item_r, .salestax_th, .unitprice_th, .subtotal_th {
+  text-align: right;
+  padding-right: 0;
+}
+
+#total_tr {
+  font-weight: bolder;
+}
+
+/*=========================== OTHER & DETAILS =========================*/
+
+#invoice-other {
+  order: 5;
+  text-align: right;
+  align-self: flex-end;
+  color: #818181;
+  margin-top: 96px;
+  width: 100%;
+  font-size: smaller;
+}
+#invoice-other h2 {
+  color: #818181;
+  font-size: small;
+}
+
+
+#payment-details {
+  order: 6;
+  align-self: flex-start;
+  color: #818181;
+  margin-top: -62px;
+  width: 100%;
+  font-size: smaller;
+}
+#payment-details h2 {
+  color: #818181;
+  font-size: small;
+}
