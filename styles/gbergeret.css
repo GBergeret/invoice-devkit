@@ -8,19 +8,25 @@ Created by Olivier Colonna
 
 .logo {
   height: 60px;
+  width: auto;
 }
 
 /*=========================== LAYOUT =========================*/
 
-#invoice {
+#invoice{
+  width: 5.6in;
   color: black;
-  padding: 90px;
+  padding: 75px;
   display: flex;
   flex-direction: column;
   position: relative;
   font-family: 'Verdana';
-  font-size: 10px;
-  line-height: 12px;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.draft #invoice.pagestyle {
+  padding-right: 75px;
 }
 
 #invoice-header {
@@ -34,7 +40,7 @@ Created by Olivier Colonna
 
 #client-details {
   text-align: right;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   order: 2;
 }
 
@@ -52,6 +58,9 @@ Created by Olivier Colonna
 
 #comments {
   order: 3;
+}
+
+#comments p {
   color: #818181;
   font-size: 9px;
   line-height: 11px;
@@ -68,16 +77,19 @@ Created by Olivier Colonna
 #invoice-info h3 {
   color: black;
   font-weight: normal;
-  font-size: 10px;
+  font-size: 12px;
+  line-height: 14px;
   width: fit-content;
   margin: 0;
   float: left;
 }
 
-#payment-terms, #payment-due {;
+#payment-terms, #payment-due {
   width: fit-content;
   float: left;
   margin-left: 4px;
+  font-size: 12px;
+  line-height: 14px;
 }
 
 #payment-terms:before, #payment-due:before {
@@ -145,7 +157,10 @@ tbody tr:last-child td {
 
 .item_r, .salestax_th, .unitprice_th, .subtotal_th {
   text-align: right;
-  padding-right: 0;
+  padding: 4px;
+  min-width: 50px;
+  max-width: 85px;
+
 }
 
 #total_tr {
@@ -172,7 +187,7 @@ tbody tr:last-child td {
   text-align: right;
   color: #818181;
   font-size: smaller;
-  margin-top: -81px;
+  margin-top: -92px;
   margin-left: auto;
 }
 
