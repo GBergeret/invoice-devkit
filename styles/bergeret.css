@@ -7,7 +7,7 @@ Created by Olivier Colonna
 /*=========================== LOGO =========================*/
 
 .logo {
-  height: 100px;
+  height: 60px;
 }
 
 /*=========================== LAYOUT =========================*/
@@ -33,6 +33,10 @@ Created by Olivier Colonna
   text-align: right;
   margin-bottom: 60px;
   order: 2;
+}
+
+#client-details .fn, .org {
+  font-weight: bold;
 }
 
 /*=========================== INFO =========================*/
