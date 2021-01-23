@@ -1,5 +1,5 @@
 /*
-Bergeret Theme
+GBergeret Theme
 Created by Olivier Colonna
 18/01/2021 */
 
@@ -13,11 +13,14 @@ Created by Olivier Colonna
 /*=========================== LAYOUT =========================*/
 
 #invoice {
-  padding: 75px;
+  color: black;
+  padding: 90px;
   display: flex;
   flex-direction: column;
   position: relative;
   font-family: 'Verdana';
+  font-size: 10px;
+  line-height: 12px;
 }
 
 #invoice-header {
@@ -43,35 +46,52 @@ Created by Olivier Colonna
 #invoice-info {
   order: 3;
   border-top: 3px solid black;
+  margin-top: 15px;
   padding-top: 15px;
-  display: flex;
-  flex-direction: column;
 }
 
 #comments {
   order: 3;
-  padding-bottom: 36.5px;
   color: #818181;
+  font-size: 9px;
+  line-height: 11px;
 }
 
 #invoice-info h2 {
-  font-size: 30px;
+  color: black;
+  text-transform: uppercase;
+  font-size: 24px;
   margin-bottom: 8px;
   font-family: 'Verdana';
 }
 
 #invoice-info h3 {
-  font-size: 15px;
+  color: black;
+  font-weight: normal;
+  font-size: 10px;
+  width: fit-content;
+  margin: 0;
+  float: left;
 }
 
-#payment-terms, #payment-due, #payment-total {
-  float: right;
+#payment-terms, #payment-due {;
   width: fit-content;
+  float: left;
+  margin-left: 4px;
+}
+
+#payment-terms:before, #payment-due:before {
+  content: "- ";
+}
+
+#invoice-info #payment-total {
+  display: none;
 }
 
 /*=========================== AMOUNT =========================*/
 
 #invoice table {
+  margin-top: 36.5px;
   border-collapse: collapse;
   clear: both;
   width: 100%;
@@ -104,15 +124,19 @@ tfoot tr td {
 }
 
 tbody tr:first-child td {
-  padding: 40px 0 9px 0;
+  padding: 20px 0 9px 0;
 }
 
 tbody tr:last-child td {
-  padding: 9px 0 40px 0;
+  padding: 9px 0 20px 0;
 }
 
 #invoice-amount, #header_row {
   border-bottom: 1px solid #000000;
+}
+
+#header_row th {
+  padding-bottom: 5px;
 }
 
 .details_th, .quantity_th {
@@ -130,30 +154,29 @@ tbody tr:last-child td {
 
 /*=========================== OTHER & DETAILS =========================*/
 
-#invoice-other {
-  order: 5;
-  text-align: right;
-  align-self: flex-end;
-  color: #818181;
-  margin-top: 96px;
-  width: 100%;
-  font-size: smaller;
-}
-#invoice-other h2 {
-  color: #818181;
-  font-size: small;
-}
-
-
 #payment-details {
-  order: 6;
-  align-self: flex-start;
+  order: 5;
   color: #818181;
-  margin-top: -62px;
-  width: 100%;
   font-size: smaller;
+  float: left;
+  padding-top: 96px;
 }
+
 #payment-details h2 {
   color: #818181;
-  font-size: small;
+  font-size: 12px;
+}
+
+#invoice-other {
+  order: 6;
+  text-align: right;
+  color: #818181;
+  font-size: smaller;
+  margin-top: -81px;
+  margin-left: auto;
+}
+
+#invoice-other h2 {
+  color: #818181;
+  font-size: 12px;
 }
