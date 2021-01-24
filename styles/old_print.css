@@ -1,0 +1,46 @@
+body{
+    padding:0 !important
+}
+#invoice-amount{
+    max-width:100%;
+    table-layout:fixed !important;
+    width:100%
+}
+#invoice-amount td.description_td,#invoice #comments{
+    overflow-wrap:break-word;
+    width:100%;
+    word-break:break-word;
+    word-wrap:break-word
+}
+@page{
+    counter-increment:page;
+    margin-left:0;
+    margin-right:0;
+    padding:0;
+    @bottom-center{
+        color: #818181;
+        content: counter(page) "/" counter(pages);
+        font-size:9pt;
+        font-style:normal;
+        font-weight:normal;
+        font-family: Verdana;
+    }
+}
+@page :first{
+    margin-top:0
+}
+#meta{
+    display:none
+}
+#payment-details,#invoice-other,#comments{
+    page-break-inside:avoid;
+}
+#invoice.pagestyle,.draft #invoice.pagestyle{
+    padding-bottom:0;
+    padding-left:75px;
+    padding-right:75px;
+    padding-top:75px !important
+}
+table#invoice-amount td,div{
+    border-width:0.05mm !important
+}
