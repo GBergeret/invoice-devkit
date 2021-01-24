@@ -1,0 +1,201 @@
+#invoice-amount{
+    max-width:100%;
+    width:100%
+}
+#invoice-amount td.description_td,#invoice #comments{
+    overflow-wrap:break-word;
+    width:100%;
+    word-break:break-word;
+    word-wrap:break-word
+}
+h1#company-name{
+    display:none
+}
+#invoice{
+    font-family:Helvetica, Arial, Verdana, sans-serif !important
+}
+#invoice h1{
+    color:#555;
+    font-size:24px;
+    margin:0;
+    text-transform:uppercase
+}
+#invoice h2,#invoice h3{
+    color:#000;
+    font-family:Helvetica, Arial, Verdana, sans-serif !important;
+    text-transform:none
+}
+#invoice h2{
+    font-size:14pt;
+    margin:10px 0
+}
+#invoice-amount td,th{
+    font-size:9pt
+}
+#invoice-header #company-address{
+    font-size:11pt;
+    line-height:14pt;
+    text-align:right
+}
+#invoice #client-details,#invoice-info p,#invoice #invoice-other,#invoice #payment-details{
+    font-size:9pt;
+    line-height:12pt
+}
+#invoice-info h2,#invoice-info h3{
+    font-weight:normal;
+    margin:0
+}
+#invoice-info h2{
+    text-transform:uppercase
+}
+#invoice-info h3{
+    font-size:12pt
+}
+#invoice #invoice-info p{
+    margin-top:0;
+    text-align:right
+}
+#invoice-info #payment-total{
+    display:none
+}
+#comments{
+    font-size:10pt;
+    font-weight:bold;
+    margin-top:15px
+}
+#invoice{
+    padding:1cm
+}
+#invoice-header .logo{
+    float:left
+}
+#invoice-header{
+    border-bottom:1px solid #bbb;
+    overflow:hidden;
+    padding-bottom:10px
+}
+#invoice-blank-header{
+    margin-top:1.6cm
+}
+#company-address{
+    float:right;
+    margin:0;
+    padding:0;
+    width:300px
+}
+#invoice-info{
+    float:right;
+    margin:0.7cm 0 20px 0;
+    text-align:right;
+    width:250px
+}
+#client-details{
+    float:left;
+    margin:0.7cm 0 20px 2.5cm;
+    width:250px
+}
+#invoice-other{
+    float:right;
+    text-align:right;
+    width:250px
+}
+#invoice #payment-details{
+    float:left;
+    width:250px
+}
+#invoice-amount{
+    clear:both;
+    margin:1em 0
+}
+#invoice h1#company-name{
+    display:block
+}
+#invoice-amount tr.item td{
+    border-top:0
+}
+#invoice-amount tfoot td{
+    border-top:1px solid #dddddd
+}
+#invoice-amount .item_group_title td{
+    padding-top:0.75em
+}
+#comments{
+    clear:both;
+    padding-top:0.5cm
+}
+#invoice table#invoice-amount{
+    border-collapse:collapse;
+    clear:both;
+    width:100%
+}
+#invoice-amount th{
+    background:#fff;
+    border-bottom:solid 1px #bbb;
+    font-weight:bold;
+    padding:1px 2px 0 5px
+}
+#invoice-amount tr.odd{
+    background:#eeeeee
+}
+#invoice-amount tr.even{
+    background:#fff
+}
+#invoice-amount td{
+    margin:0;
+    padding:4px 5px;
+    vertical-align:top
+}
+#invoice-amount .item_r{
+    text-align:right
+}
+#invoice-amount .item_l{
+    text-align:left;
+    white-space:normal
+}
+#invoice-amount .total{
+    font-weight:bold;
+    line-height:1.3;
+    text-align:right
+}
+#invoice-amount .details_th,#invoice-amount td.description_td{
+    width:50%
+}
+#invoice-amount .details_notax_th{
+    width:58%
+}
+#invoice-amount .quantity_th{
+    width:13%
+}
+#invoice-amount .subtotal_th{
+    text-align:right;
+    width:15%
+}
+#invoice-amount .unitprice_th{
+    text-align:right;
+    width:14%
+}
+#invoice-amount .salestax_th{
+    text-align:right;
+    width:8%
+}
+#invoice #invoice-uk-vat-summary{
+    background:#fff;
+    border:0;
+    border-collapse:collapse;
+    clear:both;
+    margin:25px 0 0 0;
+    width:100%
+}
+#invoice tr#invoice-uk-vat-header th{
+    border-top:1px solid #ccc;
+    padding:7px 0
+}
+#invoice-uk-vat-summary td,#invoice #invoice-uk-vat-summary th{
+    font-size:9pt;
+    padding:2px 0;
+    text-align:left
+}
+#vat-total td,#vat-total th{
+    border-top:1px solid #ccc
+}
+
