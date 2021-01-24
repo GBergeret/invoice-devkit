@@ -1,6 +1,10 @@
 body{
     padding:0 !important
 }
+#invoice {
+    width: 100%;
+    height: auto;
+}
 #invoice-amount{
     max-width:100%;
     table-layout:fixed !important;
@@ -13,6 +17,7 @@ body{
     word-wrap:break-word
 }
 @page{
+    size: A4
     counter-increment:page;
     margin-left:0;
     margin-right:0;

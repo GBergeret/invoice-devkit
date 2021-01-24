@@ -1,5 +1,11 @@
+#invoice{
+    width: 210mm;
+    height: 297mm;
+    padding:75px;
+    font-family: Verdana;
+}
 .logo {
-  padding: 0.75cm;
+  /* padding: 0.75cm; */
   height: 60px  !important;
   width: auto !important;
 }
@@ -76,8 +82,8 @@ h1#company-name{
     text-align: center;
     color: #818181;
 }
-#invoice{
-    padding:1cm
+#comments p{
+    max-width: 210mm;
 }
 #invoice-header .logo{
     float:left
@@ -114,7 +120,6 @@ h1#company-name{
 #invoice-other{
     float:right;
     text-align:right;
-    width:250px;
     color: #818181;
 }
 #invoice-other h2{
@@ -145,9 +150,6 @@ h1#company-name{
 #invoice-amount tr.item td{
     border-top:0
 }
-#invoice-amount tfoot{
-    border-top:2px solid black;
-}
 #invoice-amount .item_group_title td{
     padding-top:0.75em
 }
@@ -166,6 +168,9 @@ h1#company-name{
     border-top:2px solid black;
     font-weight:bold;
     padding:2px 2px 0 5px
+}
+#invoice-amount tfoot{
+    border-top:2px solid black;
 }
 #invoice-amount td{
     margin:0;
@@ -221,4 +226,3 @@ h1#company-name{
     padding:2px 0;
     text-align:left
 }
-
