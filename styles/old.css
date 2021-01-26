@@ -1,12 +1,12 @@
-#invoice{
-    width: 210mm;
-    height: 297mm;
-    padding:75px;
-    font-family: Verdana;
+#invoice.pagestyle{
+    width: 170mm !important;               /* 210mm - 20mm*2 (padding) */
+    max-width: 170mm !important;       /* 210mm - 20mm*2 (padding) */
+    height: 257mm !important;              /* 297mm - 20mm*2 (padding) */
+    padding: 20mm;
+    font-family: Verdana !important;
 }
-.logo {
-  /* padding: 0.75cm; */
-  height: 60px  !important;
+#invoice-header .logo {
+  height: 50px  !important;
   width: auto !important;
 }
 #invoice-amount{
@@ -15,57 +15,53 @@
 }
 #invoice-amount td.description_td,#invoice #comments{
     overflow-wrap:break-word;
-    width:100%;
     word-break:break-word;
     word-wrap:break-word
 }
 h1#company-name{
     display:none
 }
-#invoice{
-   font-family: Verdana;
-}
 #invoice h1{
-    color:#555;
-    font-size:24px;
+    font-size:24px !important;
     margin:0;
     text-transform:uppercase
 }
 #invoice h2,#invoice h3{
-    color:#000;
-    font-family:Verdana !important;
     text-transform:none
 }
 #invoice h2{
-    font-size:14pt;
+    font-size:14pt !important;
     margin:10px 0
 }
 #invoice-amount td,th{
-    font-size:9pt;
+    font-size:9pt !important;
 }
 #invoice-header #company-address{
-    font-size:10pt;
-    line-height:12pt;
+    font-size:10pt !important;
+    line-height:12pt !important;
     text-align:right
 }
 #invoice #client-details,#invoice-info p,#invoice #invoice-other,#invoice #payment-details{
-    font-size:10pt;
-    line-height:12pt
+    font-size:10pt !important;
+    line-height:12pt !important;
+}
+#client-details #your-tax-number {
+    padding-top: 8px;
 }
 #invoice-info h2,#invoice-info h3{
     font-weight:normal;
-    margin:0
+    margin:0;
 }
 #invoice-info h2{
     text-transform:uppercase;
     font-weight: bold;
-    font-size:14pt;
-    line-height: 16pt;
+    font-size:14p !importantt;
+    line-height: 16pt !important;
     margin-bottom: 4px;
 }
 #invoice-info h3{
-    font-size:10pt;
-    line-height: 12pt;
+    font-size:10pt !important;
+    line-height: 12pt !important;
 }
 #invoice #invoice-info p{
     margin:0;
@@ -75,14 +71,15 @@ h1#company-name{
     display:none
 }
 #comments {
-    margin-top:15px;
+    position: absolute;
+    top: 240mm;
+    right: 20mm;
+    width: 170mm;
 }
 #comments, #comments p{
-    font-size:9pt;
-    text-align: center;
+    font-size:9pt !important;
+    text-align: left;
     color: #818181;
-}
-#comments p{
     max-width: 210mm;
 }
 #invoice-header .logo{
@@ -104,41 +101,46 @@ h1#company-name{
     float:right;
     margin-bottom:20px;
     text-align:right;
-    width:250px
+    width:70mm;
 }
-#client-details{
-    float:left;
-    margin:0 0 20px 2.5cm;
-    width:250px
+#invoice #client-details{
+    position: absolute;
+    top: 55mm;
+    left: 25mm;
+    float: left;
+    width: 79.4mm;
 }
 #client-details div.fn, #client-details div.org{
     font-weight: bold;
 }
-#client-details, #invoice-other {
-    padding-bottom: 30px;
-}
-#invoice-other{
+#invoice-other {
+    position: absolute;
+    top: 245mm;
+    right: 75px;
     float:right;
     text-align:right;
     color: #818181;
+    width: 55mm;
 }
 #invoice-other h2{
-    font-size: 10pt;
-    line-height: 12pt;
+    font-size: 10pt !important;
+    line-height: 12pt !important;
     color: #818181;
 }
 #invoice #payment-details{
+    position: absolute;
+    top: 245mm;
+    left: 75px;
     float:left;
     color: #818181;
-    width:300px
 }
 #invoice #payment-details h2{
     color: #818181;
-    font-size: 10pt;
-    line-height: 12pt;
+    font-size: 10pt !important;
+    line-height: 12pt !important;
 }
 #invoice #payment-details, #invoice #invoice-other {
-    padding-top: 30px;
+    margin-top: 30px;
 }
 #invoice-amount{
     clear:both;
@@ -153,24 +155,19 @@ h1#company-name{
 #invoice-amount .item_group_title td{
     padding-top:0.75em
 }
-#comments{
-    clear:both;
-    padding-top:0.5cm
-}
 #invoice table#invoice-amount{
     border-collapse:collapse;
     clear:both;
-    width:100%
+    width:100%;
 }
-#invoice-amount th{
-    background:#fff;
+#invoice-amount th {
     border-bottom:1px solid black;
     border-top:2px solid black;
     font-weight:bold;
-    padding:2px 2px 0 5px
+    padding:2px 2px 0 5px;
 }
-#invoice-amount tfoot{
-    border-top:2px solid black;
+#invoice-amount tbody tr:last-child td {
+    border-bottom: 2px solid black;
 }
 #invoice-amount td{
     margin:0;
@@ -212,7 +209,6 @@ h1#company-name{
 }
 #invoice #invoice-uk-vat-summary{
     background:#fff;
-    border:0;
     border-collapse:collapse;
     clear:both;
     margin:25px 0 0 0;
@@ -222,7 +218,14 @@ h1#company-name{
     padding:7px 0
 }
 #invoice-uk-vat-summary td,#invoice #invoice-uk-vat-summary th{
-    font-size:9pt;
+    font-size:9pt !important;
     padding:2px 0;
     text-align:left
 }
+#company-address .adr {
+  padding-bottom: 8px !important;
+}
+#sales-tax-reg-number {
+  padding-top: 8px !important;
+}
+

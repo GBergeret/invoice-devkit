@@ -8,16 +8,16 @@ body{
 #invoice-amount{
     max-width:100%;
     table-layout:fixed !important;
-    width:100%
+    width:100%;
 }
 #invoice-amount td.description_td,#invoice #comments{
     overflow-wrap:break-word;
     width:100%;
     word-break:break-word;
-    word-wrap:break-word
+    word-wrap:break-word;
 }
 @page{
-    size: A4
+    size: A4;
     counter-increment:page;
     margin-left:0;
     margin-right:0;
@@ -45,7 +45,4 @@ body{
     padding-left:75px;
     padding-right:75px;
     padding-top:75px !important
-}
-table#invoice-amount td,div{
-    border-width:0.05mm !important
 }
