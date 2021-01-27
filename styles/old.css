@@ -115,8 +115,8 @@ h1#company-name{
 }
 #invoice-other {
     position: absolute;
-    top: 245mm;
-    right: 75px;
+    top: 243mm;
+    right: 20mm;
     float:right;
     text-align:right;
     color: #818181;
@@ -129,8 +129,8 @@ h1#company-name{
 }
 #invoice #payment-details{
     position: absolute;
-    top: 245mm;
-    left: 75px;
+    top: 243mm;
+    left: 20mm;
     float:left;
     color: #818181;
 }
