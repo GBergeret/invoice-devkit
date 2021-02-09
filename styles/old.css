@@ -5,6 +5,10 @@
     padding: 20mm;
     font-family: Verdana !important;
 }
+#invoice.pagestyle *{
+    font-size:8pt !important;
+    line-height:10pt !important;
+}
 #invoice-header .logo {
   height: 50px  !important;
   width: auto !important;
@@ -22,7 +26,6 @@ h1#company-name{
     display:none
 }
 #invoice h1{
-    font-size:24px !important;
     margin:0;
     text-transform:uppercase
 }
@@ -30,21 +33,10 @@ h1#company-name{
     text-transform:none
 }
 #invoice h2{
-    font-size:14pt !important;
     margin:10px 0
 }
-#invoice-amount td,th{
-    font-size:9pt !important;
-    line-height:11pt !important;
-}
 #invoice-header #company-address{
-    font-size:9pt !important;
-    line-height:11pt !important;
     text-align:right
-}
-#invoice #client-details,#invoice-info p,#invoice #invoice-other,#invoice #payment-details{
-    font-size:9pt !important;
-    line-height:11pt !important;
 }
 #client-details #your-tax-number {
     padding-top: 8px;
@@ -53,16 +45,12 @@ h1#company-name{
     font-weight:normal;
     margin:0;
 }
-#invoice-info h2{
+#invoice.pagestyle #invoice-info h2, #invoice.pagestyle #invoice-info h2 strong {
     text-transform:uppercase;
     font-weight: bold;
-    font-size:13p !importantt;
+    font-size:13pt !important;
     line-height: 15pt !important;
     margin-bottom: 4px;
-}
-#invoice-info h3{
-    font-size:9pt !important;
-    line-height: 11pt !important;
 }
 #invoice #invoice-info p{
     margin:0;
@@ -79,7 +67,6 @@ h1#company-name{
     width: 170mm;
 }
 #comments, #comments p{
-    font-size:8pt !important;
     text-align: left;
     color: #818181;
     max-width: 210mm;
@@ -115,7 +102,7 @@ h1#company-name{
 }
 #invoice-other {
     position: absolute;
-    top: 245mm;
+    top: 246mm;
     right: 20mm;
     float:right;
     text-align:right;
@@ -123,21 +110,17 @@ h1#company-name{
     width: 55mm;
 }
 #invoice-other h2{
-    font-size: 9pt !important;
-    line-height: 11pt !important;
     color: #818181;
 }
 #invoice #payment-details{
     position: absolute;
-    top: 245mm;
+    top: 246mm;
     left: 20mm;
     float:left;
     color: #818181;
 }
 #invoice #payment-details h2{
     color: #818181;
-    font-size: 9pt !important;
-    line-height: 11pt !important;
 }
 #invoice #payment-details, #invoice #invoice-other {
     margin-top: 30px;
@@ -218,7 +201,6 @@ h1#company-name{
     padding:7px 0
 }
 #invoice-uk-vat-summary td,#invoice #invoice-uk-vat-summary th{
-    font-size:8pt !important;
     padding:2px 0;
     text-align:left
 }
