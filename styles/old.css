@@ -48,8 +48,8 @@ h1#company-name{
 #invoice.pagestyle #invoice-info h2, #invoice.pagestyle #invoice-info h2 strong {
     text-transform:uppercase;
     font-weight: bold;
-    font-size:13pt !important;
-    line-height: 15pt !important;
+    font-size:20pt !important;
+    line-height: 21pt !important;
     margin-bottom: 4px;
 }
 #invoice #invoice-info p{
@@ -87,14 +87,13 @@ h1#company-name{
     padding:0;
 }
 #invoice-info{
-    margin-bottom:40px;
+    margin-bottom:50px;
     text-align:right;
 }
 #invoice #client-details{
     position: absolute;
     top: 55mm;
-    left: 20mm;
-    float: left;
+    left: 25mm;
     width: 79.4mm;
 }
 #client-details div.fn, #client-details div.org{
@@ -104,7 +103,6 @@ h1#company-name{
     position: absolute;
     top: 246mm;
     right: 20mm;
-    float:right;
     text-align:right;
     color: #818181;
     width: 55mm;
@@ -116,7 +114,6 @@ h1#company-name{
     position: absolute;
     top: 246mm;
     left: 20mm;
-    float:left;
     color: #818181;
 }
 #invoice #payment-details h2{
@@ -133,7 +130,8 @@ h1#company-name{
     display:block
 }
 #invoice-amount tr.item td{
-    border-top:0
+    border-top:0;
+    padding: 10px 6px;
 }
 #invoice-amount .item_group_title td{
     padding-top:0.75em
@@ -145,11 +143,11 @@ h1#company-name{
 }
 #invoice-amount th {
     border-bottom:1px solid black;
-    border-top:2px solid black;
     font-weight:bold;
-    padding:2px 2px 0 5px;
+    padding:4px 5px;
 }
 #invoice-amount tbody tr:last-child td {
+    height: 150px;                                        /* Hack to have a min-height on the table */
     border-bottom: 1px solid black;
 }
 #invoice-amount td{
